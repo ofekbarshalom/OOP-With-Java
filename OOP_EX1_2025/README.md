@@ -69,15 +69,6 @@ The repository is organized as follows:
 
 ---
 
-## Future Improvements
-
-- Enhance the AI with more sophisticated algorithms.
-- Add unit tests for better reliability.
-- Improve GUI design for a modern and intuitive user experience.
-- Expand the game's features, such as additional board sizes and game modes.
-
----
-
 ## Acknowledgments
 
-This project was completed as part of an OOP course at [University Name]. Special thanks to the course instructors and teaching assistants for their guidance.
+This project was completed as part of an OOP course at Ariel University. Special thanks to the course instructors and teaching assistants for their guidance.
