@@ -71,15 +71,6 @@ The system allows management of gym clients, sessions, instructors, and other es
 
 ---
 
-## Future Improvements
-
-- Enhance the session management system to include scheduling.
-- Add a user-friendly graphical user interface (GUI).
-- Include persistence through database integration.
-- Expand exception handling for more robust error management.
-
----
-
 ## Acknowledgments
 
-This project was developed as part of an OOP course at [University Name]. Special thanks to the course instructors and peers for their support.
+This project was developed as part of an OOP course at Ariel University. Special thanks to the course instructors and peers for their support.
