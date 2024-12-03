@@ -18,6 +18,11 @@ The repository is divided into subfolders, each representing a distinct project 
      
 ---
 
+##License
+This project is licensed under the [MIT License](./LICENSE). You are free to use, modify, and distribute this software in accordance with the terms of the license.
+
+---
+
 ## Technologies Used
 
 - **Programming Language**: Java
