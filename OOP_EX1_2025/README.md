@@ -1,67 +1,83 @@
-# Reversi Game Implementation
+# OOP_EX1_2025
 
-This project involves creating an expanded version of the strategic board game **Reversi**, implemented on an 8x8 board with special disc types. The goal is to apply Object-Oriented Programming (OOP) principles while creating a functional and interactive game that follows the rules specified.
+## Overview
 
-## Project Structure
-
-The provided files include:
-
-- `GUI_for_chess_like_games` - Graphical User Interface for the game.
-- `PlayableLogic` - Interface defining the game's rules.
-- `Player` - Base class for players.
-- `AIPlayer` - Base class for AI-controlled players.
-- `Disc` - Abstract class representing a disc on the board.
-- `Main` - Main class to run the game.
-- Sample game file - Demonstrates basic gameplay.
-
-For additional details, refer to the [assignment PDF](מימוש%20משחק%20רברסי.pdf) included in this repository.
-
-## Classes to Implement
-
-### 1. GameLogic
-- Implements the `PlayableLogic` interface.
-- Manages game state, rules, board, and player turns.
-- Handles placing and flipping opponent discs.
-
-### 2. Discs
-Implement `Disc` interface for different disc types:
-- **SimpleDisc** - Regular disc that follows standard Reversi rules.
-- **UnflippableDisc** - Special disc that cannot be flipped once placed.
-- **BombDisc** - When flipped, it causes surrounding discs to flip, potentially triggering other bombs.
-
-### 3. Helper Classes
-- **Position** - Represents a position on the board.
-- **Move** - Represents a game move and supports undo functionality.
-
-### 4. AI Players
-- **RandomAI** - Randomly selects a legal move.
-- **GreedyAI** - Chooses the move that flips the maximum number of opponent discs.
-
-## Game Rules
-
-- The objective is to finish with the highest number of discs in your color.
-- The game begins with four discs in the center.
-- Three types of discs exist: Regular, Unflippable, and Bomb (special flipping rules apply).
-- The game ends when no legal moves are available for the next player.
-
-## Additional Requirements
-
-- **AI Players**: Implement AI players using `RandomAI` and `GreedyAI`. AI should handle legal moves intelligently and can be extended for bonus points with a more advanced AI player.
-- **Undo Functionality**: Allow undoing moves for games with human players only.
-- **Game Reset**: Implement a reset feature to restart the game.
-
-## Submission
-
-- Submit all files as a ZIP file named `ID1_ID2.zip` (replace with your student IDs).
-
-## Coding Guidelines
-
-- Follow OOP principles such as inheritance, encapsulation, and method overloading.
-- Document all classes and methods using JavaDoc.
-- Implement error handling and consider edge cases.
-- Ensure compatibility with the provided GUI.
-- Maintain clean and documented code style.
+This repository contains the implementation of an Object-Oriented Programming (OOP) project completed as part of a university course. The project is focused on implementing a chess-like game, specifically Reversi (or Othello), with support for different AI players, a graphical user interface, and various gameplay mechanics. The primary goal of the project was to apply OOP principles, such as inheritance, encapsulation, and polymorphism, in a practical and educational context.
 
 ---
 
-Good luck!
+## Features
+
+- **Graphical User Interface (GUI):** A GUI for chess-like games, facilitating user interaction.
+- **AI Players:** Multiple AI strategies are implemented, including:
+  - Greedy AI
+  - Random AI
+  - MinMax AI
+- **Game Mechanics:** Core Reversi gameplay logic, including:
+  - Handling discs and their states.
+  - Supporting human and computer players.
+  - Undo and replay functionality.
+- **Extensibility:** Modular design for adding additional game logic or AI strategies.
+
+---
+
+## Project Structure
+
+The repository is organized as follows:
+
+- **Main.java:** Entry point for the application.
+- **Game Logic:**
+  - `GameLogic.java` - Core game mechanics and rules.
+  - `PlayableLogic.java` - Interfaces and abstractions for custom logic.
+- **Players:**
+  - `Player.java` - Abstract class representing a player.
+  - `HumanPlayer.java` - Implementation for human players.
+  - `AIPlayer.java` - Abstract class for AI players.
+  - `GreedyAI.java`, `RandomAI.java`, `MinMaxAI.java` - Specific AI strategies.
+- **Discs:**
+  - `Disc.java` - Base class for discs used in the game.
+  - `SimpleDisc.java`, `BombDisc.java`, `UnflippableDisc.java` - Specialized discs.
+- **GUI:**
+  - `GUI_for_chess_like_games.java` - Graphical interface for game interaction.
+- **Utils:**
+  - `Move.java`, `Position.java` - Supporting classes for managing moves and positions.
+- **Documentation:**
+  - `README.md` - Project overview.
+  - `מימוש משחק רברסי.pdf` - Detailed documentation in Hebrew.
+
+---
+
+## Requirements
+
+- **Java Development Kit (JDK):** Version 8 or higher.
+- **Development Environment:** IntelliJ IDEA or any preferred Java IDE.
+- **Libraries:** None (all dependencies are built-in).
+
+---
+
+## How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/<username>/OOP_EX1_2025.git
+   cd OOP_EX1_2025
+   ```
+
+2. Open the project in your Java IDE.
+
+3. Run the `Main.java` file to start the game.
+
+---
+
+## Future Improvements
+
+- Enhance the AI with more sophisticated algorithms.
+- Add unit tests for better reliability.
+- Improve GUI design for a modern and intuitive user experience.
+- Expand the game's features, such as additional board sizes and game modes.
+
+---
+
+## Acknowledgments
+
+This project was completed as part of an OOP course at [University Name]. Special thanks to the course instructors and teaching assistants for their guidance.
