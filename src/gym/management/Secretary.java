@@ -215,13 +215,13 @@ public class Secretary implements Subject {
         }
 
         // Check if there are available places left
-        if (s.getTrainees().size() >= s.maxClientsInLesson()) {
+        if (s.getTrainees().size() >= s.getSessionType().getMaxPeople()) {
             gym.addAction("Failed registration: No available spots for session");
             check = false;
         }
 
         // Check if the client has enough balance to pay
-        int price = s.LessonPrice();
+        int price = s.getSessionType().getPrice();
         if (price > c.getPerson().getBalance()) {
             gym.addAction("Failed registration: Client doesn't have enough balance");
             check = false;

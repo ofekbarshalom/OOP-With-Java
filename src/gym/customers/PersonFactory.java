@@ -2,6 +2,7 @@ package gym.customers;
 
 import gym.management.*;
 import gym.management.Sessions.SessionType;
+
 import java.util.List;
 
 /**

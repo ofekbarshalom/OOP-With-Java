@@ -95,43 +95,7 @@ public class Session {
                 " | Date: " + date +
                 " | Forum: " + forumType +
                 " | Instructor: " + instructor.getPerson().getName() +
-                " | Participants: " + trainees.size() + "/" + maxClientsInLesson();
-    }
-
-    /**
-     * Determines the maximum number of clients allowed in a session based on its type.
-     * @return The maximum number of clients for the session.
-     */
-    public int maxClientsInLesson() {
-        switch (sessionType) {
-            case Pilates:
-                return 30;
-            case MachinePilates:
-                return 10;
-            case ThaiBoxing:
-                return 20;
-            case Ninja:
-            default:
-                return 5;
-        }
-    }
-
-    /**
-     * Determines the price of the session based on its type.
-     * @return The price of the session.
-     */
-    public int LessonPrice() {
-        switch (sessionType) {
-            case Pilates:
-                return 60;
-            case MachinePilates:
-                return 80;
-            case ThaiBoxing:
-                return 100;
-            case Ninja:
-            default:
-                return 150;
-        }
+                " | Participants: " + trainees.size() + "/" + sessionType.getMaxPeople();
     }
 
     /**
