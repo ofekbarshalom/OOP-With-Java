@@ -64,12 +64,7 @@ A Python script (`auto_check.py`) is provided to verify your implementation agai
    ```
 
 3. The script will compare your output with the expected results and indicate if your implementation is correct.
-
-## Notes
-
-- Ensure all class relationships and behaviors strictly follow OOP principles.
-- The output of the program must match the format in `output.txt` exactly, including whitespace and capitalization.
-- Refer to the provided `Main.java` file for examples of functionality and expected outputs.
+4. keep in mind that the python script works only in linux.
 
 ## Design Patterns Used
 
